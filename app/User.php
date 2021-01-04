@@ -90,6 +90,8 @@ class User extends Authenticatable {
         return $this->friends()->where('friend_user_id', $user->id)->exists();
     }
 
+    // Attempted to get friends to be added back
+
     // public function friendOf()
     // {
     //     return $this->belongsToMany(User::class, 'friends', 'friend_user_id', 'user_id');
